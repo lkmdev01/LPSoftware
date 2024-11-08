@@ -1,0 +1,17 @@
+ <div class="groupcard flex justify-center gap-10 pt-5">
+          <div class="card border border-zinc-700 rounded-xl p-10 bg-zinc-950 hover:bg-white transition duration-300 flex items-center w-52">
+              <img src="/facebook.png" alt="Empresa 1" class="filter invert">
+          </div>
+          <div class="card border border-zinc-700 rounded-xl p-10 bg-zinc-950 hover:bg-white transition duration-300 flex items-center w-36">
+              <img src="/instagram.png" alt="Empresa 2" class="filter invert">
+          </div>
+          <div class="card border border-zinc-700 rounded-xl p-10 bg-zinc-950 hover:bg-white transition duration-300 flex items-center w-52">
+              <img src="/ifood.png" alt="Empresa 3" class="filter invert">
+          </div>
+          <div class="card border border-zinc-700 rounded-xl p-10 bg-zinc-950 hover:bg-white transition duration-300 flex items-center w-52">
+              <img src="/hotmart.png" alt="Empresa 4" class="filter invert">
+          </div>
+          <div class="card border border-zinc-700 rounded-xl p-10 bg-zinc-950 hover:bg-white transition duration-300 flex items-center w-52">
+              <img src="/youtube.png" alt="Empresa 5" class="filter invert">
+          </div>
+        </div>

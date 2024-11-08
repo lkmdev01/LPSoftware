@@ -1,0 +1,116 @@
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import HeaderNav from './components/HeaderNav.vue'
+import MyHeader from './components/MyHeader.vue'
+import MyServices from './components/MyServices.vue'
+import MyPortfolio from './components/MyPortfolio.vue';
+import MyPrices from './components/MyPrices.vue';
+import MyTestimonials from './components/MyTestimonials.vue';
+import MyFooter from './components/MyFooter.vue';
+
+// Slide
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+// Dados dos slides
+const items = ref([
+  { src: '/facebook.png', alt: 'Facebook' },
+  { src: '/instagram.png', alt: 'Instagram' },
+  { src: '/ifood.png', alt: 'iFood' },
+  { src: '/hotmart.png', alt: 'Hotmart' },
+  { src: '/youtube.png', alt: 'YouTube' },
+]);
+
+// Módulos do Swiper
+const modules = [Autoplay, Pagination, Navigation];
+
+// Armazena o número de slides visíveis
+const currentSlidesPerView = ref(calculateSlidesPerView());
+
+// Calcula o número de slides visíveis com base na largura da tela
+function calculateSlidesPerView() {
+  const width = window.innerWidth;
+  if (width < 600) return 1;
+  if (width < 900) return 2;
+  if (width < 1200) return 3;
+  return 4; // Número máximo de slides visíveis para larguras maiores
+}
+
+// Atualiza o número de slides visíveis quando a janela é redimensionada
+function updateSlidesPerView() {
+  currentSlidesPerView.value = calculateSlidesPerView();
+}
+
+onMounted(() => {
+  // Adiciona ouvinte de redimensionamento
+  window.addEventListener('resize', updateSlidesPerView);
+  // Atualiza o número de slides visíveis na montagem
+  updateSlidesPerView();
+});
+</script>
+
+<template>
+  <div>
+    <HeaderNav></HeaderNav>
+    <MyHeader></MyHeader>
+    <section class="bg-zinc-950">
+      <div class="my-container backline pb-10 lg:pb-15">
+        <h3 class="text-lg font-semibold">Tecnologias usadas pelas grandes empresas</h3>
+        <swiper
+          :spaceBetween="30"
+          :centeredSlides="true"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
+          }"
+          :pagination="{
+            clickable: true,
+          }"
+          :navigation="false"
+          :slidesPerView="currentSlidesPerView"
+          :modules="modules"
+          class="mySwiper"
+        >
+          <swiper-slide v-for="(item, index) in items" :key="index">
+            <img :src="item.src" :alt="item.alt" class="w-full h-auto">
+          </swiper-slide>
+        </swiper>
+      </div>
+    </section>
+    <MyServices></MyServices>
+    <MyPortfolio></MyPortfolio>
+    <MyPrices></MyPrices>
+    <MyTestimonials></MyTestimonials>
+    <MyFooter></MyFooter>
+  </div>
+</template>
+
+<style scoped>
+.swiper-slide img {
+    transition: filter 0.3s ease;
+    filter: grayscale(1);
+}
+.swiper-slide:hover img {
+    filter: grayscale(0);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
