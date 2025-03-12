@@ -10,6 +10,7 @@ import MyPortfolio from './components/MyPortfolio.vue';
 import MyPrices from './components/MyPrices.vue';
 import MyTestimonials from './components/MyTestimonials.vue';
 import MyFooter from './components/MyFooter.vue';
+import MyBenefits from './components/MyBenefits.vue';
 
 // Slide
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -17,6 +18,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 // Dados dos slides
 const items = ref([
@@ -109,6 +111,7 @@ onUnmounted(() => {
     </section>
     <MyServices data-aos="fade-up" data-aos-anchor-placement="top-center"></MyServices>
     <MyPortfolio data-aos="fade-up" data-aos-anchor-placement="top-center"></MyPortfolio>
+    <MyBenefits data-aos="fade-up" data-aos-anchor-placement="top-center"></MyBenefits>
     <MyPrices data-aos="fade-up" data-aos-anchor-placement="top-center"></MyPrices>
     <MyTestimonials data-aos="fade-up" data-aos-anchor-placement="top-center"></MyTestimonials>
     <div class="fixed flex justify-center flex-col items-center bottom-4 right-4">
@@ -116,7 +119,7 @@ onUnmounted(() => {
         <i class="fa-solid fa-circle-arrow-up text-2xl"></i>
       </button>
       <button class="bg-green-700 w-12 h-12 text-white rounded-full shadow-lg hover:bg-green-600 hover:border-green-200">
-        <a href="https://wa.me/5513981376072?text=Ol%C3%A1!%20Vim%20do%20site%20www.lkmdev.com%20%F0%9F%92%BB"><i class="fa-brands fa-whatsapp text-2xl text-white"></i></a>
+        <a href="https://wa.me/5513981376072?text=Ol%C3%A1!%20Vim%20do%20site%20www.inovaforce.com%20%F0%9F%92%BB"><i class="fa-brands fa-whatsapp text-2xl text-white"></i></a>
       </button>
     </div>
     

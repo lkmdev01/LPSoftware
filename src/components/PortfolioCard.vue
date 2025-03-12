@@ -10,7 +10,7 @@
       class="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center transition-opacity duration-300"
     >
       <a :href="projectLink" class="text-white text-lg font-bold p-3 bg-white bg-opacity-20 rounded hover:bg-opacity-40 transition">
-        See Project &rarr;
+        Ver Projeto &rarr;
       </a>
     </div>
   </div>

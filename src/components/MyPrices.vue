@@ -1,69 +1,58 @@
 <script setup lang="ts">
-
-
 </script>
 
 <template>
   <div class="bg-zinc-950" id="valores">
     <div class="my-container backline md:text-left py-10 lg:py-20">
-      <h2 class="text-blue-500 text-sm">VALORES</h2>
-      <h3 class="text-4xl font-bold text-white">Valores Estimados para seu Projeto</h3>
-      <p class="text-gray-300 mt-2 mb-5 max-w-4xl">Os preços listados abaixo são valores estimados para ajudar você a ter uma breve noção dos custos envolvidos. Oferecemos precificações exclusivas e personalizadas, dependendo das necessidades e especificidades de cada projeto.<br> <span class="text-blue-200 font-semibold"><a href="http://">Entre em contato</a></span> para um orçamento detalhado e sob medida. </p>
-      <div class="groupcard">
-       
-      <div class=" flex flex-wrap xl:grid justify-center xl:grid-cols-3 gap-10">
-        <PricesCard
-          title="Essencial"
-          price="R$445"
-          description="Ideal para pequenos negócios ou startups que precisam de uma presença online básica."
-          :features="[
-            'Design Responsivo',
-            '1 Página',
-            'Formulário de Contato',
-            'Configuração Básica de SEO',
-            'Infraestrutura Básica'
-          ]"
-        link="https://wa.me/5513981376072?text=Ol%C3%A1,%20vim%20pelo%20site%20lkmdev.com%20e%20me%20interessei%20pelo%20plano%20Essencial."
-        />
-        <PricesCard
-          class="highlight shadow-blue-500 shadow-sm"
-          title="Recomendado"
-          price="R$998"
-          description="Nosso plano mais popular, perfeito para empresas que buscam um site mais completo e funcional."
-          :features="[
-            'Design Responsivo',
-            'Até 3 Páginas',
-            'Suporte Premium (90 dias)',
-            'Formulário de Contato e Blog',
-            'Otimização SEO',
-            'Infraestrutura Básica'
-          ]"
-          link="https://wa.me/5513981376072?text=Ol%C3%A1,%20vim%20pelo%20site%20lkmdev.com%20e%20me%20interessei%20pelo%20plano%20Recomendado."
-        />
-        <PricesCard
-          title="Premium"
-          price="R$4.500"
-          description="Para empresas que necessitam de um site robusto com funcionalidades avançadas."
-          :features="[
-            'Design Responsivo e Personalizado',
-            'Até 10 Páginas',
-            'Suporte Completo (6 meses)',
-            'Formulário de Contato, Blog, e Loja Online (básica)',
-            'Otimização SEO Avançada',
-            'Manutenção Mensal (6 meses)',
-            'Infraestrutura + Desempenho'
-          ]"
-          link="https://wa.me/5513981376072?text=Ol%C3%A1,%20vim%20pelo%20site%20lkmdev.com%20e%20me%20interessei%20pelo%20plano%20Premium."
-        />
-      </div>
-  </div>
-      </div>
-    </div>
-</template>
+      <h2 class="text-blue-500 text-sm">PRECIFICAÇÃO PERSONALIZADA</h2>
+      <h3 class="text-4xl font-bold text-white">Precificação Sob Medida para o Seu Projeto</h3>
+      <p class="text-gray-300 mt-2 mb-5 max-w-4xl">
+        Cada projeto é único, e nossos preços são personalizados de acordo com suas necessidades e objetivos. Entenda como funciona:
+      </p>
 
-<script setup lang="ts">
-import PricesCard from './PricesCard.vue';
-</script>
+      <!-- Passo a Passo -->
+      <div class="flex flex-wrap gap-6 mb-10">
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">1. Conhecemos o Seu Negócio</h3>
+          <p class="text-gray-300 mt-2">Nossa equipe entra em contato para entender suas necessidades, objetivos e expectativas.</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">2. Criamos uma Proposta Sob Medida</h3>
+          <p class="text-gray-300 mt-2">Com base na análise, elaboramos um orçamento detalhado, incluindo escopo, prazos e funcionalidades.</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">3. Desenvolvemos e Entregamos o Projeto</h3>
+          <p class="text-gray-300 mt-2">Após a aprovação do orçamento, nossa equipe trabalha para entregar um site que combine design, funcionalidade e resultados.</p>
+        </div>
+      </div>
+
+      <!-- Fatores que Influenciam o Preço -->
+      <h3 class="text-2xl font-bold text-white mt-10 mb-5">O Que Influencia o Preço?</h3>
+      <div class="flex flex-wrap gap-6 mb-10">
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">Escopo do Projeto</h3>
+          <p class="text-gray-300 mt-2">Quantidade de páginas, funcionalidades e complexidade do design.</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">Integrações</h3>
+          <p class="text-gray-300 mt-2">Sistemas de pagamento, blogs, lojas online, APIs, etc.</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">Otimização SEO</h3>
+          <p class="text-gray-300 mt-2">Nível de otimização para motores de busca.</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">Suporte e Manutenção</h3>
+          <p class="text-gray-300 mt-2">Período de suporte pós-entrega e planos de manutenção contínua.</p>
+        </div>
+        <div class="bg-zinc-900 p-6 rounded-lg flex-1 min-w-[250px]">
+          <h3 class="text-blue-500 text-xl font-semibold">Prazo de Entrega</h3>
+          <p class="text-gray-300 mt-2">Projetos com prazos mais curtos podem ter custos diferenciados.</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .highlight {

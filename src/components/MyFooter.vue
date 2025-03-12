@@ -34,10 +34,10 @@
           <a href="https://x.com/lkmdev1" target="_blank" class="text-2xl text-white hover:text-blue-500">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/InovaForce/" target="_blank" class="text-2xl text-white hover:text-blue-500">
+          <a href="https://www.instagram.com/ainovaforce/" target="_blank" class="text-2xl text-white hover:text-blue-500">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.linkedin.com/company/InovaForce/" target="_blank" class="text-2xl text-white hover:text-blue-500">
+          <a href="https://www.linkedin.com/company/ainovaforce/" target="_blank" class="text-2xl text-white hover:text-blue-500">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://github.com/lkmdev01" target="_blank" class="text-2xl text-white hover:text-blue-500">

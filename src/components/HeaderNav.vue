@@ -30,10 +30,10 @@ const notify = () => {
   <header class="w-100 bg-zinc-950">
     <div class="w-full py-3 flex justify-center items-center text-sm">
       <p class="text-gray-400">
-        <span class="py-1 px-4 text-gray-300 bg-zinc-925 rounded-xl">Ganhe agora</span>
-        <b>20% off</b> ao recomendar para 5 pessoas
+        <span class="py-1 px-4 text-gray-300 bg-zinc-925 rounded-xl">Baixe Grátis</span>
+        Mapa Mental para Alavancar seu Negócio na Internet!
       </p>
-      <a @click="notify" class="py-2 mx-3 px-4 border border-blue-600 rounded-md">Participar!!</a>
+      <a @click="notify" class="py-2 mx-3 px-4 border border-blue-600 rounded-md">Quero meu Mapa Mental</a>
     </div>
     <nav class="w-full border-t border-b border-zinc-700 py-8">
       <div class="my-container mx-auto flex items-center justify-between">
@@ -50,7 +50,7 @@ const notify = () => {
         </div>
         <div class="hidden md:flex">
           <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-            <a class="hover:text-white" href="https://wa.me/5513981376072?text=Ol%C3%A1!%20vim%20pelo%20site%20lkmdev.com.">Vamos Conversar</a>
+            <a class="hover:text-white" href="https://wa.me/5513981376072?text=Ol%C3%A1!%20vim%20pelo%20site%20inovaforce.com">Vamos Conversar</a>
             <i class="fa-solid fa-square-arrow-up-right ml-2"></i>
           </button>
         </div>
